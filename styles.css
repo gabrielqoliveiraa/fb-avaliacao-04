@@ -143,3 +143,25 @@ body {
     padding: 0.5rem;
     cursor: pointer;
 }
+
+.reviews {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.review p {
+    font-style: italic;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.client-info img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
