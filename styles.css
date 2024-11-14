@@ -108,3 +108,38 @@ body {
     width: 100%;
     border-radius: 8px;
 }
+
+
+.popular-destinations {
+    background: linear-gradient(to bottom, #e0f7fa, #fff3e0);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.destination-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.destination-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.destination-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.destination-card button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
