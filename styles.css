@@ -9,12 +9,21 @@ body {
     color: #333;
 }
 
+h3 { 
+    font-size: 36px;
+}
 
 .header {
     background: #4a90e2;
     color: #fff;
     padding: 1rem 0;
+    font-family: 'Poppins', sans-serif;
 }
+
+.header h1 {
+    font-family: 'Lobster', sans-serif
+}
+
 
 .header .container {
     display: flex;
@@ -39,12 +48,26 @@ body {
 
 .menu li {
     margin-left: 1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    border-bottom: 2px solid transparent; 
+}
+
+.menu li:hover {
+    color: #FFAD32; 
+    border-bottom: 2px solid #FFAD32; 
+    transform: translateY(-2px); 
 }
 
 .menu a {
     color: #fff;
     text-decoration: none;
 }
+
+.menu a:hover {
+    color: #FFAD32; 
+}
+
 
 
 .banner {
@@ -89,19 +112,67 @@ body {
 }
 
 .next-trips {
+    background-color: #f0f4f8;
     padding: 2rem 1rem;
     text-align: center;
 }
 
 .next-trips h3 {
-    color: #4a90e2;
+    font-size: 1.8rem;
+    color:  #747DFF;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.next-trips .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.next-trips .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem;
+    align-items: center;
+}
+
+.text-column {
+    text-align: left;
+}
+
+.text-column p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.text-column button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
 .trip-cards {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
     gap: 1rem;
-    margin-top: 1rem;
+}
+
+.trip-cards .card {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.trip-cards .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .card img {
@@ -114,26 +185,63 @@ body {
     background: linear-gradient(to bottom, #e0f7fa, #fff3e0);
     padding: 2rem 1rem;
     text-align: center;
+    font-family: 'Lobster', sans-serif;
+    color: #747DFF;
+
 }
 
 .destination-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 30%); 
+    gap: 1rem; 
+    margin-top: 52px;
     justify-content: center;
+    align-items: center;
+    color: #3C4852;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.footer-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2px
 }
 
 .destination-card {
-    width: 200px;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
     background-color: #fff;
+    text-align: center;
+    max-width: 450px;
+    max-height: 550px;
+}
+
+.card-text p {
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-text {
+    display: grid;
+
 }
 
 .destination-card img {
-    width: 100%;
+    max-width: 400px;
+    max-height: 360px;
     border-radius: 8px;
+}
+
+.destination-card h4 {
+    margin: 0.5rem 0;
+}
+
+.destination-card p {
+    font-weight: bold;
+    color: #333;
 }
 
 .destination-card button {
@@ -142,11 +250,28 @@ body {
     border: none;
     padding: 0.5rem;
     cursor: pointer;
+    margin-top: 0.5rem;
+    border-radius: 4px;
 }
 
 .reviews {
+    height: 780px;
+    width: 100%;
     padding: 2rem 1rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-review {
+    display: grid;
+    gap: 30px;
+}
+
+.container-review h3 {
+    color: #747DFF;
 }
 
 .review p {
@@ -154,14 +279,16 @@ body {
 }
 
 .client-info {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+    gap: 26px;
 }
 
 .client-info img {
-    width: 50px;
+    width: 232px;
+    height: 232px;
     border-radius: 50%;
     margin-right: 0.5rem;
 }
